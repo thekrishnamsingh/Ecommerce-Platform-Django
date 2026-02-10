@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <title>Softpro Electronics Online Shopping System</title>
+  </head>
+    <body>
+
+        <div class="container-fluid">
+        <!-- outer start -->
+
+            {% include "navbar.html" %}
+
+            <!-- slider start -->
+            <div class="row">
+                <div class="col-sm-12 p-0">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="static/images/webpic/l10.jpeg" class="d-block w-100" alt="..." style="height:400px;width:400px;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>First slide label</h5>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="static/images/webpic/50.jpeg" class="d-block w-100" alt="..." style="height:400px;width:400px;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Second slide label</h5>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="static/images/webpic/mslider1.jpg" class="d-block w-100" alt="..." style="height:400px;width:400px;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Third slide label</h5>
+                                 </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <!-- slider end -->
+
+<div class="row">
+    <ceter top:50px;><h2 style="color:aqua;">What We Have??</h2></ceter>
+    <marquee style="color: red;" >Electronics Shopping System houses everything you can possibly imagine, from Trending electronics like laptops, tablets, smartphones, and mobile accessories, appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances&copy; copyright 2022-2023 all right reserved, designed and developed by Ritish Kumar Tripathi</marquee>
+</div>
+
+            <!-- section start -->
+            <div class="row mt-3">
+                <div class="col-sm-3 text-center">
+                    <div class="section shadow-sm">
+                        <img src="static/images/iphone13.jpg" alt="" style="height:300px;width:300px;">
+                    </div>
+                    <button type="button" class="btn btn-warning mt-2"><a href="{% url 'mobile' %}">Mobiles</a></button>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="section shadow-sm">
+                        <img src="static/images/webpic/e3.jpeg" alt="" style="height:200px;width:200px;">
+                    </div>
+                    <button type="button" class="btn btn-warning mt-2"><a href="{% url 'earbuds' %}">Earbuds</a></a></button>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="section shadow-sm">
+                        <img src="static/images/accer.jpg" alt="" style="height:200px;width:200px;">
+                    </div>
+                    <button type="button" class="btn btn-warning mt-2"><a href="{% url 'laptop' %}">Laptop&TV</a></button>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="section shadow-lg">
+                        <img src="static/images/webpic/fz3.jpg" alt="" style="height:200px;width:200px;">
+                    </div>
+                    <button type="button" class="btn btn-warning mt-2"><a href="{% url 'fridge' %}">Fridge</a></button>
+                </div>
+            </div>
+                        <div class="row mt-3">
+                <div class="col-sm-3 text-center">
+                    <div class="section shadow-sm">
+                        <img src="static/images/webpic/s5.jpg" alt="" style="height:300px;width:300px;">
+                    </div>
+                    <button type="button" class="btn btn-warning mt-2"><a href="{% url 'speakers' %}">Speakers</a></button>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="section shadow-sm">
+                        <img src="static/images/fan&ac.jpg" alt="" style="height:200px;width:200px;">
+                    </div>
+                    <button type="button" class="btn btn-warning mt-2"><a href="{% url 'fan' %}">Fan&AC</a></a></button>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="section shadow-sm">
+                        <img src="static/images/swp.jpg" alt="" style="height:200px;width:200px;">
+                    </div>
+                    <button type="button" class="btn btn-warning mt-2"><a href="{% url 'watch' %}">SmartWatches</a></button>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <div class="section shadow-lg">
+                        <img src="static/images/webpic/wm5.jpg" alt="" style="height:200px;width:200px;">
+                    </div>
+                    <button type="button" class="btn btn-warning mt-2"><a href="{% url 'washing' %}">Washing Machine</a></button>
+                </div>
+            </div>
+            <!-- section end -->
+
+
+
+            <!-- product start -->
+                   <div class="row mt-5">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="static/images/webpic/m14.jpg" class="card-img-top" alt="..." style="height:300px;width:300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.35780 /-</h5>
+                            <p class="fw-bold">OnePlus nord2</p>
+                            <small class="card-text d-block">16GB RAM 128 GB ROM 15.49 cm (6.1 inch) Super Retina XDR Display 12MP + 12MP | 12MP Front Camera All Screen OLED Display 12MP TrueDepth Front Camera with Night Mode, Year Warranty from the Date of Purchase 7 Days Replacement Policy?.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="static/images/webpic/l8.jpeg" class="card-img-top" alt="..." style="height:300px;width:300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.125000 /-</h5>
+                            <p class="fw-bold">Apple Laptop</p>
+                            <small class="card-text d-block">Stylish & Portable Thin and Light Laptop 15.6 inch 8GB RAM 512SSD CORE i3 Ultra HD LED TOUCH SCREEN Easy Payment Options No cost EMI starting from ₹12,055/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="static/images/webpic/fz8.jpg" class="card-img-top" alt="..." style="height:300px;width:300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.24880 /-</h5>
+                            <p class="fw-bold">fidge LG</p>
+                            <small class="card-text d-block">Freezer Fast cooling And auto on/off sensor 780wt double door type, 7 Days Replacement Policy, Easy Payment Options No cost EMI starting from ₹12,05/month Net banking & Credit/ Debit/ ATM card View Details?.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="static/images/webpic/wm7.jpg" class="card-img-top" alt="..." style="height:300px;width:300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.19870 /-</h5>
+                            <p class="fw-bold">Washing Machine</p>
+                            <small class="card-text d-block">Fully Automatic Top Load Washing Machines are ergonomically hight volt 1000wt friendly and provide great Easy Payment Options No cost EMI starting from ₹1,216/month Net banking & Credit/ Debit/ ATM card View Details?.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="static/images/swb.jpg" class="card-img-top" alt="..." style="height:300px;width:300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.4578 /-</h5>
+                            <p class="fw-bold">Smart Watch</p>
+                            <small class="card-text d-block">1.69 LCD Display- OGS Full Touch Display with a High Resolution of 240*280 Pixel & 1.69 inch LCD Screen covered with a 2D High Hard Glass Covers Manufacturing Defects 7 Days Replacement Policy?.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="static/images/webpic/t3.jpeg" class="card-img-top" alt="..." style="height:300px;width:300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.25000 /-</h5>
+                            <p class="fw-bold"> Redmi TV</p>
+                            <small class="card-text d-block">Stylish & Portable Thin and Ultra HD LED TOUCH SCREEN Easy Payment Options No cost EMI starting from ₹12,05/month Net banking & Credit/ Debit/ ATM card View Details 7 Days Replacement Policy?.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="static/images/webpic/f8.jpg" class="card-img-top" alt="..." style="height:300px;width:300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.14880 /-</h5>
+                            <p class="fw-bold">Styles Fan</p>
+                            <small class="card-text d-block">best in class cooling With Light. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="static/images/webpic/ac6.jpg" class="card-img-top" alt="..." style="height:300px;width:300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.29870 /-</h5>
+                            <p class="fw-bold">LG AC</p>
+                            <small class="card-text d-block">best in class Fast cooling with light. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- product end -->
+          {% include "footer.html" %}
+        <!-- outer end -->
+        </div>
+
+    </body>
+</html>

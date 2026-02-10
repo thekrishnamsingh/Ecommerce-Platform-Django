@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <title>Online Shopping System</title>
+  </head>
+    <body>
+
+        <div class="container-fluid">
+        <!-- outer start -->
+
+            <!-- headline start -->
+            {% include "navbar.html" %}
+            <!-- navbar end -->
+
+
+
+            <!-- slider start -->
+            <div class="row">
+                <div class="col-sm-12 p-0">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="{% static 'images/webpic/slider4.jpg' %}" class="d-block w-100" alt="..." style="height:300px;width:300px;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5></h5>
+                              <p></p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="{% static 'images/webpic/slider5.jpg' %}" class="d-block w-100" alt="..." style="height:300px;width:300px;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5></h5>
+                              <p></p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="{% static 'images/webpic/slider6.jpg' %}" class="d-block w-100" alt="..."style="height:300px;width:300px;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5></h5>
+                              <p></p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <!-- slider end -->
+            <!-- section start -->
+            <!-- section end -->
+            <!-- product start -->
+            <div class="row mt-5">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{%  static 'images/webpic/sw10.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.6999 /-</h5>
+                            <p class="fw-bold">Dizo smartwatch</p>
+                            <small class="card-text d-block">1.69 LCD Display- OGS Full Touch Display with a High Resolution of 240*280 Pixel & 1.69 inch LCD Screen covered with a 2D High Hard Glass Covers Manufacturing Defects 7 Days Replacement Policy? </small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/sw7.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.2800 /-</h5>
+                            <p class="fw-bold">boat watches</p>
+                            <small class="card-text d-block">1.44LCD Display- OGS Full Touch Display with a High Resolution of 240*280 Pixel & 1.69 inch LCD Screen covered with a 2D High Hard Glass Covers Manufacturing Defects 7 Days Replacement Policy?.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/sw6.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.29000 /-</h5>
+                            <p class="fw-bold">apple watches</p>
+                            <small class="card-text d-block">1.69 Display- OGS Full Touch Display with a High Resolution of 240*280 Pixel & 1.69 inch LCD Screen covered with a 2D High Hard Glass Covers Manufacturing Defects 7 Days Replacement Policy?.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/sw5.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.3500 /-</h5>
+                            <p class="fw-bold">reami smartwatches</p>
+                            <small class="card-text d-block">1.9 LCD Display- OGS Full Touch Display with a High Resolution of 240*280 Pixel & 1.69 inch LCD Screen covered with a 2D High Hard Glass Covers Manufacturing Defects 7 Days Replacement Policy?.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/sw4.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.12000 /-</h5>
+                            <p class="fw-bold">SmartWatches</p>
+                            <small class="card-text d-block">1.69 LCD Display- OGS Full Touch Display with a High Resolution of 240*280 Pixel & 1.69 inch LCD Screen covered with a 2D High Hard Glass Covers Manufacturing Defects 7 Days Replacement Policy?.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/sw3.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.32000 /-</h5>
+                            <p class="fw-bold">apple smartwatch</p>
+                            <small class="card-text d-block">1.69 LCD Display- OGS Full Touch Display with a High Resolution of 240*280 Pixel & 1.69 inch LCD Screen covered with a 2D High Hard Glass Covers Manufacturing Defects 7 Days Replacement Policy?.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/sw2.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:200">
+                        <div class="card-body">
+                            <h5 class="card-title">₹.23000 /-</h5>
+                            <p class="fw-bold">Apple smartwatch</p>
+                            <small class="card-text d-block">:1.99 LCD Display- OGS Full Touch Display with a High Resolution of 240*280 Pixel & 1.69 inch LCD Screen covered with a 2D High Hard Glass Covers Manufacturing Defects 7 Days Replacement Policy?.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/sw1.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:300px">
+                        <div class="card-body">
+                            <h5 class="card-title">₹.72000 /-</h5>
+                            <p class="fw-bold">SmartWatches</p>
+                            <small class="card-text d-block">1.69 LCD Display- OGS Full Touch Display with a High Resolution of 240*280 Pixel & 1.69 inch LCD Screen covered with a 2D High Hard Glass Covers Manufacturing Defects 7 Days Replacement Policy?.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product end -->
+
+
+
+            <!-- footer start -->
+              {% include "footer.html" %}
+            <!-- footer end -->
+
+
+
+        <!-- outer end -->
+        </div>
+
+    </body>
+</html>

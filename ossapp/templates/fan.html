@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+  <head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <title>Online Shopping System</title>
+  </head>
+    <body>
+
+        <div class="container-fluid">
+
+            {% include "navbar.html" %}
+
+              <!-- slider start -->
+            <div class="row">
+                <div class="col-sm-12 p-0">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="{% static 'images/webpic/ac2.jpg' %}" class="d-block w-100" alt="..." style="height:300px;width:300px;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5></h5>
+                              <p></p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="{% static 'images/webpic/f4.jpg' %}" class="d-block w-100" alt="..." style="height:300px;width:300px;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5></h5>
+                              <p></p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="{% static 'images/webpic/ac6.jpg' %}" class="d-block w-100" alt="..."style="height:300px;width:300px;">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5></h5>
+                              <p></p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <!-- slider end -->
+
+
+            <div class="row mt-5">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{%  static 'images/webpic/f1.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.6999 /-</h5>
+                            <p class="fw-bold">Modern Fan</p>
+                            <small class="card-text d-block">: best in class cooling With Light. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details .</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/f2.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.9500 /-</h5>
+                            <p class="fw-bold">Styles Fan</p>
+                            <small class="card-text d-block">:Smart Look And best in class cooling with light. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details ..</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/f3.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.9999/-</h5>
+                            <p class="fw-bold">Styles Fan</p>
+                            <small class="card-text d-block">:Smart Look, best in class cooling. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/f4.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.8999 /-</h5>
+                            <p class="fw-bold">Havales Fan</p>
+                            <small class="card-text d-block">: best in class cooling. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{%  static 'images/webpic/f9.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.12999 /-</h5>
+                            <p class="fw-bold">Modern Fan</p>
+                            <small class="card-text d-block">: Goleden Color with lightandbest in class cooling With Light. Sleep Mode: Auto-adjusts the temperature Easy Payment Net banking & Credit/ Debit/ ATM card View Details .</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/f10.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.4500 /-</h5>
+                            <p class="fw-bold">Simple Fan</p>
+                            <small class="card-text d-block">:best in class cooling with light. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details ..</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/f11.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.3999/-</h5>
+                            <p class="fw-bold">Styles Fan</p>
+                            <small class="card-text d-block">:Simple fan best in class cooling. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/f12.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.3999 /-</h5>
+                            <p class="fw-bold">Havales Fan</p>
+                            <small class="card-text d-block">: best in class cooling. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-5">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/f5.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.9299 /-</h5>
+                            <p class="fw-bold">Smart Fan</p>
+                            <small class="card-text d-block">: best in class cooling. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details .</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/f6.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.12099 /-</h5>
+                            <p class="fw-bold">Top Modern Fan</p>
+                            <small class="card-text d-block">:Top Modern And Smart Fan, best in class cooling. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/f7.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:200">
+                        <div class="card-body">
+                            <h5 class="card-title">₹.12399 /-</h5>
+                            <p class="fw-bold">Fast Fan</p>
+                            <small class="card-text d-block">:Top Most Beautiful look fast speed and best in class cooling. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details .</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/f8.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px">
+                        <div class="card-body">
+                            <h5 class="card-title">₹.11200 /-</h5>
+                            <p class="fw-bold">E-Modern Fan</p>
+                            <small class="card-text d-block">: best in class cooling. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/ac1.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.29999 /-</h5>
+                            <p class="fw-bold">Modern Lg AC</p>
+                            <small class="card-text d-block">: best in class Fast cooling whole room. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{%  static 'images/webpic/ac2.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.32999 /-</h5>
+                            <p class="fw-bold">Modern AC</p>
+                            <small class="card-text d-block">: Goleden Color best in class Fast cooling With Light. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details .</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/ac3.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.34500 /-</h5>
+                            <p class="fw-bold">Styles AC</p>
+                            <small class="card-text d-block">:best in class Fast cooling with light. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/ac4.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.23999/-</h5>
+                            <p class="fw-bold">Symple AC</p>
+                            <small class="card-text d-block">:Simple ac best in class cooling. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/ac5.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.22999 /-</h5>
+                            <p class="fw-bold">Havales AC</p>
+                            <small class="card-text d-block">: best in class fast cooling. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/ac6.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.34500 /-</h5>
+                            <p class="fw-bold">Top Modern AC</p>
+                            <small class="card-text d-block">:best in class Fast cooling with light. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details ..</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/ac7.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.24999/-</h5>
+                            <p class="fw-bold">Modern Ac</p>
+                            <small class="card-text d-block">:Simple best in class Fast cooling Room. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/ac10.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.37999 /-</h5>
+                            <p class="fw-bold">Modern Ac</p>
+                            <small class="card-text d-block">: best in class Fast cooling. Sleep Mode: Auto-adjusts the temperature Easy Payment Options EMI starting from ₹1,094/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product end -->
+              {% include "footer.html" %}
+        </div>
+    </body>
+</html>

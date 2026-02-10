@@ -1,0 +1,39 @@
+
+<div class="container-fluid; bg-dark text-light text-center p-0 " style="border:1px solid; width:60%;margin-top:10%;padding:10px; ;margin-left:20%;border-radius:15px;box-shadow:10px 10px 10px ;">
+<div class="row" style="text-align:center; color:black; background-color:white; width:700px; margin:0 auto;padding:15px; font-size:30px; text-shadow:3px 3px 7px ;">
+<div class="col-sm-12">
+  <img src="{{product.image.url}}" style="height:200px;width:200px;" ></br>
+ {{product.name}}
+Rs.{{product.price}}
+{{product.desc}}
+
+</div>
+</div>
+<div class="row " style="text-align:center; color:white; background-color:white; width:700px; margin:0 auto;padding:15px; font-size:30px;">
+    <div class="col-sm-12">
+{% if method == "add_to_cart" %}
+{% for item in cart %}
+{{item.product.name}}
+{% endfor %}
+<a href="{% url 'checkout' %}">Confirm Order</a>
+
+    </div>
+</div>
+{% else %}
+    <div class="row ">
+        <div class="col-sm-12 bg-dark text-light">
+<form action="{% url 'checkout' %}" method="post" style="text-align:center; ">
+    {% csrf_token %}
+    <input type="text" name="productid" value="{{product.id}}"  hidden >
+    <br><input type="text" name="email" value="{{customer.emailaddress}}"  hidden>
+    <br><input type="text" name="price" value="{{product.price}}" style="width:50%;height:5%; text-align:center; margin-bottom:10px; border-radius:15px;font-size:20px;">
+    <br><input type="text" name="address" value="{{customer.address}}" style="width:50%;height:5%; text-align:center; margin-bottom:10px; border-radius:15px;font-size:20px;">
+    <br><input type="text" name="pincode" value="{{customer.pincode}}" style="width:50%;height:5%; text-align:center; margin-bottom:10px; border-radius:15px;font-size:20px;">
+    <br><input type="text" name="quantity" value="1"  hidden>
+    <br><button type="submit" class="btn btn-warning" style="width:200px; height:50px;border-radius:15px; font-size:20px;font-weight:bolder;box-shadow:10px 10px 10px ;">Checkout</button>
+</form>
+        </div>
+    </div>
+</div>
+
+{% endif %}

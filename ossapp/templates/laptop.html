@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+  <head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <title>Online Shopping System</title>
+  </head>
+    <body>
+
+        <div class="container-fluid">
+
+            {% include "navbar.html" %}
+
+              <!-- slider start -->
+            <div class="row">
+                <div class="col-sm-12 p-0">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="{% static 'images/webpic/l10.jpeg' %}" class="d-block w-100" alt="..." style="height:300px;width:300px;">
+                            <div class="carousel-caption d-none d-md-block">
+                                </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="{% static 'images/webpic/50o.jpeg' %}" class="d-block w-100" alt="..." style="height:300px;width:300px;">
+                            <div class="carousel-caption d-none d-md-block">
+                             </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="{% static 'images/webpic/l6.jpeg' %}" class="d-block w-100" alt="..."style="height:300px;width:300px;">
+                            <div class="carousel-caption d-none d-md-block">
+                               </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <!-- slider end -->
+
+
+                        <div class="row mt-5">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{%  static 'images/webpic/l1.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.42990 /-</h5>
+                            <p class="fw-bold">HP CORE i5</p>
+                            <small class="card-text d-block">Stylish & Portable Thin and Light Laptop 15.6 inch Ultra HD, 8GB RAM 512SSD LED Easy Payment Options No cost EMI starting from ₹11,055/month Net banking & Credit/ Debit/ ATM card View Details. </small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/l2.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.52090 /-</h5>
+                            <p class="fw-bold">DELL I3 TOUCH</p>
+                            <small class="card-text d-block">Stylish & Portable Thin and Light Laptop 15.6 inch 8GB RAM 512SSD CORE i3 Ultra HD LED TOUCH SCREEN Easy Payment Options No cost EMI starting from ₹12,055/month Net banking & Credit/ Debit/ ATM card View Details .</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/l3.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.49050/-</h5>
+                            <p class="fw-bold">DELL I5</p>
+                            <small class="card-text d-block">Stylish & 4GB RAM 512 SSD I5 Proccessor Portable Thin and Light Laptop 15.6 inch Ultra HD LED Easy Payment Options No cost EMI starting from ₹11,055/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/l4.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.29000 /-</h5>
+                            <p class="fw-bold">HP core i3</p>
+                            <small class="card-text d-block">Stylish & 4GB RAM 256SSD i3 proccessor Portable Thin and Light Laptop 15.6 inch Ultra HD LED Easy Payment Options No cost EMI starting from ₹11,055/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{%  static 'images/webpic/l5.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.64990 /-</h5>
+                            <p class="fw-bold">VICTUS Gaming Laptop</p>
+                            <small class="card-text d-block">Stylish & Portable Thin and Light Laptop 15.6 inch 8GB RAM 512SSD CORE i3 Ultra HD LED TOUCH SCREEN Easy Payment Options No cost EMI starting from ₹12,055/month Net banking & Credit/ Debit/ ATM card View Details .</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/l6.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.24500 /-</h5>
+                            <p class="fw-bold">ACER</p>
+                            <small class="card-text d-block">Stylish & Portable Thin and Light Laptop 15.6 inch 8GB RAM 512SSD CORE i3 Ultra HD LED TOUCH SCREEN Easy Payment Options No cost EMI starting from ₹12,055/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/l7.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.1,29000/-</h5>
+                            <p class="fw-bold">Ipad Macbook</p>
+                            <small class="card-text d-block">Stylish & Portable Thin and Light Laptop 15.6 inch 8GB RAM 512SSD CORE i3 Ultra HD LED TOUCH SCREEN Easy Payment Options No cost EMI starting from ₹12,055/month Net banking & Credit/ Debit/ ATM card View Details .</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/l8.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.1,18500 /-</h5>
+                            <p class="fw-bold">Macbook</p>
+                            <small class="card-text d-block">Stylish & Portable Thin and Light Laptop 15.6 inch 8GB RAM 512SSD CORE i3 Ultra HD LED TOUCH SCREEN Easy Payment Options No cost EMI starting from ₹12,055/month Net banking & Credit/ Debit/ ATM card View Details .</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/l11.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.58990 /-</h5>
+                            <p class="fw-bold">ASUS Gaming</p>
+                            <small class="card-text d-block">Stylish & Portable Thin and Light Laptop 15.6 inch 8GB RAM 512SSD CORE i3 Ultra HD LED TOUCH SCREEN Easy Payment Options No cost EMI starting from ₹12,055/month Net banking & Credit/ Debit/ ATM card View Details .</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/l12.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.29099 /-</h5>
+                            <p class="fw-bold">ASUS book</p>
+                            <small class="card-text d-block">Stylish & Portable Thin and Light Laptop 15.6 inch 8GB RAM 512SSD CORE i3 Ultra HD LED TOUCH SCREEN Easy Payment Options No cost EMI starting from ₹12,055/month Net banking & Credit/ Debit/ ATM card View Details .</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/l9.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:300">
+                        <div class="card-body">
+                            <h5 class="card-title">₹.1,36950 /-</h5>
+                            <p class="fw-bold">Macbook White</p>
+                            <small class="card-text d-block">:Stylish & Portable Thin and Light Laptop 15.6 inch 8GB RAM 512SSD CORE i3 Ultra HD LED TOUCH SCREEN Easy Payment Options No cost EMI starting from ₹12,055/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/l10.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:300px">
+                        <div class="card-body">
+                            <h5 class="card-title">₹.1,23500 /-</h5>
+                            <p class="fw-bold">Ipad Air</p>
+                            <small class="card-text d-block">Stylish & Portable Thin and Light Laptop 15.6 inch 8GB RAM 512SSD CORE i3 Ultra HD LED TOUCH SCREEN Easy Payment Options No cost EMI starting from ₹12,055/month Net banking & Credit/ Debit/ ATM card View Details .</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/tv.jpg' %}" class="card-img-top" alt="..." style="height:200px;width:200px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.13990 /-</h5>
+                            <p class="fw-bold">Realmi TV</p>
+                            <small class="card-text d-block">Stylish & Portable Thin and Ultra HD LED TOUCH SCREEN Easy Payment Options No cost EMI starting from ₹12,05/month Net banking & Credit/ Debit/ ATM card View Details .</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/t1.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:250px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Rs.18099 /-</h5>
+                            <p class="fw-bold">Samsung TV</p>
+                            <small class="card-text d-block">Stylish & Portable Thin and Ultra HD LED TOUCH SCREEN Easy Payment Options No cost EMI starting from ₹12,05/month Net banking & Credit/ Debit/ ATM card View Details 7 Days Replacement Policy?.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/t3.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:200">
+                        <div class="card-body">
+                            <h5 class="card-title">₹.21950 /-</h5>
+                            <p class="fw-bold">Smart TV</p>
+                            <small class="card-text d-block">Stylish & Portable Thin and Ultra HD LED TOUCH SCREEN Easy Payment Options No cost EMI starting from ₹12,05/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="{% static 'images/webpic/t2.jpeg' %}" class="card-img-top" alt="..." style="height:200px;width:300px">
+                        <div class="card-body">
+                            <h5 class="card-title">₹.18500 /-</h5>
+                            <p class="fw-bold">LG TV</p>
+                            <small class="card-text d-block">Stylish & Portable Thin and Ultra HD LED TOUCH SCREEN Easy Payment Options No cost EMI starting from ₹12,05/month Net banking & Credit/ Debit/ ATM card View Details.</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-warning">Add to cart</a>
+                                <a href="#" class="btn btn-warning float-end">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product end -->
+              {% include "footer.html" %}
+        </div>
+    </body>
+</html>
