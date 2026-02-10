@@ -25,4 +25,4 @@ urlpatterns = [
 
 
 #thekrishnamsingh@gmail.com
-#mail
+#mail password: 1234567890
