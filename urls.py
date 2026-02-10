@@ -26,3 +26,4 @@ urlpatterns = [
 
 #thekrishnamsingh@gmail.com
 #mail password: 1234567890
+#django-admin startproject ossproject
